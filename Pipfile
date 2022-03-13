@@ -10,9 +10,9 @@ isort = "==5.10.1"
 brunette = "==0.2.4"
 
 [scripts]
-sort_imports = "isort tasks.py"
-lint = "flake8 tasks.py"
-format = "brunette tasks.py"
+sort_imports = "isort ./src"
+lint = "flake8 ./src"
+format = "brunette ./src"
 
 [requires]
 python_version = "3.8"
