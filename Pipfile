@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "==2.27.1"
+flake8 = "==4.0.1"
+isort = "==5.10.1"
+brunette = "==0.2.4"
+
+[scripts]
+sort_imports = "isort tasks.py"
+lint = "flake8 tasks.py"
+format = "brunette tasks.py"
+
+[requires]
+python_version = "3.8"
